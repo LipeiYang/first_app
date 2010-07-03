@@ -15,6 +15,6 @@ class HistoryPoint < ActiveRecord::Base
       and longitude between :north and :south", 
       { :start => period[:start], :end => period[:end],
         :east => region[:east], :west => region[:west],
-        :north => region[:north], :south => region[:south] } ]
+        :north => region[:north], :south => region[:south] } ])
   end
 end

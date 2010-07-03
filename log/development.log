@@ -510,3 +510,37 @@ Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-07-04 00:57:0
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
 Completed in 125ms (View: 16, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-04 02:12:01) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-04 02:12:04) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 79ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-04 02:12:15) [GET]
+
+SyntaxError (C:/Documents and Settings/Leopard/My Documents/Aptana Studio 3 Workspace/demo/app/models/history_point.rb:19: syntax error, unexpected kEND, expecting ')'):
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
