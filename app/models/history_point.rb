@@ -16,5 +16,5 @@ class HistoryPoint < ActiveRecord::Base
       { :start => period[:start], :end => period[:end],
         :east => region[:east], :west => region[:west],
         :north => region[:north], :south => region[:south] } ]
-  end 
+  end
 end
