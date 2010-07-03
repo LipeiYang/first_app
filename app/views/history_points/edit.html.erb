@@ -12,8 +12,8 @@
     <%= f.text_field :longitude %>
   </p>
   <p>
-    <%= f.label :time %><br />
-    <%= f.datetime_select :time %>
+    <%= f.label :time_at_string, "Time"%><br />
+    <%= f.text_field :time_at_string %>
   </p>
   <p>
     <%= f.submit 'Update' %>

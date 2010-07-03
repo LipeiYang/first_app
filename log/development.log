@@ -181,3 +181,323 @@ Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points.xml
 Processing HistoryPointsController#index to xml (for 127.0.0.1 at 2010-07-03 18:39:23) [GET]
   [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
 Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points.xml]
+
+
+Processing HistoryPointsController#new (for 127.0.0.1 at 2010-07-03 18:42:34) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/new
+Completed in 219ms (View: 188, DB: 0) | 200 OK [http://localhost/history_points/new]
+
+
+Processing HistoryPointsController#create (for 127.0.0.1 at 2010-07-03 18:47:15) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"M9nd7IthLCmwKAJoqVPBS81/S7rhIEfSP0vSa22UK/o=", "history_point"=>{"time(1i)"=>"2010", "time(2i)"=>"7", "latitude"=>"1", "time(3i)"=>"3", "time(4i)"=>"10", "time(5i)"=>"42", "longitude"=>"2"}}
+  [4;36;1mHistoryPoint Create (16.0ms)[0m   [0;1mINSERT INTO "history_points" ("latitude", "updated_at", "time", "longitude", "created_at") VALUES(1.0, '2010-07-03 10:47:15', '2010-07-03 10:42:00', 2.0, '2010-07-03 10:47:15')[0m
+Redirected to http://localhost:3000/history_points/1
+Completed in 141ms (DB: 16) | 302 Found [http://localhost/history_points]
+
+
+Processing HistoryPointsController#show (for 127.0.0.1 at 2010-07-03 18:47:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/show
+Completed in 46ms (View: 31, DB: 0) | 200 OK [http://localhost/history_points/1]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:48:54) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#new (for 127.0.0.1 at 2010-07-03 18:48:56) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/new
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #16 of app/views/history_points/new.html.erb:
+13:   </p>
+14:   <p>
+15:     <%= f.label :time_at_string %><br />
+16:     <%= f.text_field :time_at_string %>
+17:   </p>
+18:   <p>
+19:     <%= f.submit 'Create' %>
+
+    app/models/history_point.rb:4:in `to_s'
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/new.html.erb:16
+    app/views/history_points/new.html.erb:3
+    app/controllers/history_points_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:49:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 235ms (View: 219, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:50:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:50:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+
+ActionView::TemplateError (undefined method `text_field' for #<HistoryPoint:0x49d5e14>) on line #16 of app/views/history_points/edit.html.erb:
+13:   </p>
+14:   <p>
+15:     <%= f.label :text_field %><br />
+16:     <%= f.text_field :text_field %>
+17:   </p>
+18:   <p>
+19:     <%= f.submit 'Update' %>
+
+    app/views/history_points/edit.html.erb:16
+    app/views/history_points/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:50:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 141ms (View: 125, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:51:29) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#new (for 127.0.0.1 at 2010-07-03 18:51:30) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/new
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #16 of app/views/history_points/new.html.erb:
+13:   </p>
+14:   <p>
+15:     <%= f.label :time_at_string %><br />
+16:     <%= f.text_field :time_at_string %>
+17:   </p>
+18:   <p>
+19:     <%= f.submit 'Create' %>
+
+    app/models/history_point.rb:4:in `to_s'
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/new.html.erb:16
+    app/views/history_points/new.html.erb:3
+    app/controllers/history_points_controller.rb:29:in `new'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#new (for 127.0.0.1 at 2010-07-03 18:52:14) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/history_points/new]
+
+
+Processing HistoryPointsController#new (for 127.0.0.1 at 2010-07-03 18:52:44) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/new
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/history_points/new]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:52:50) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:52:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 187ms (View: 172, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:52:55) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:56:37) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:56:38) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+
+ActionView::TemplateError (undefined method `local' for Sat Jul 03 10:42:00 UTC 2010:Time) on line #16 of app/views/history_points/edit.html.erb:
+13:   </p>
+14:   <p>
+15:     <%= f.label :time_at_string, "Time"%><br />
+16:     <%= f.text_field :time_at_string %>
+17:   </p>
+18:   <p>
+19:     <%= f.submit 'Update' %>
+
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/edit.html.erb:16
+    app/views/history_points/edit.html.erb:3
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:56:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#show (for 127.0.0.1 at 2010-07-03 18:57:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/show
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points/1]
+
+
+Processing HistoryPointsController#show (for 127.0.0.1 at 2010-07-03 18:58:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/show
+Completed in 94ms (View: 63, DB: 0) | 200 OK [http://localhost/history_points/1]
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-03 18:58:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:58:31) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#new (for 127.0.0.1 at 2010-07-03 18:58:35) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/new
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/history_points/new]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 18:58:40) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-03 19:00:23) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index to html (for 127.0.0.1 at 2010-07-03 19:00:41) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points.html]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSQLite3::SQLException: near ")": syntax error: SELECT * FROM "history_points" WHERE (latitude = ) [0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE (latitude = 1) [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE (latitude between 1 and 1 ) [0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: longirudkjjjlllhhhhhhhhhh: SELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longirudkjjjlllhhhhhhhhhh) [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: longirud: SELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longirud) [0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: longirud: SELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longirud) [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longitude = 2) [0m
