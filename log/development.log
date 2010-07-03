@@ -501,3 +501,12 @@ Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points.htm
   [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: longirud: SELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longirud) [0m
   [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such column: longirud: SELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longirud) [0m
   [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE (latitude between 1 and 1 and longitude = 2) [0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-07-04 00:57:00) [GET]
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Completed in 125ms (View: 16, DB: 0) | 200 OK [http://localhost/rails/info/properties]
