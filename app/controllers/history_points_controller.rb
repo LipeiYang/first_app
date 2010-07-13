@@ -2,7 +2,7 @@ class HistoryPointsController < ApplicationController
   # GET /history_points
   # GET /history_points.xml
   def index
-    @history_points = HistoryPoint.all
+    @history_points = HistoryPoint.find_history_points(params)
 
     respond_to do |format|
       format.html # index.html.erb

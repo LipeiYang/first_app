@@ -22,3 +22,21 @@
 <br />
 
 <%= link_to 'New history_point', new_history_point_path %>
+
+<br />
+
+<% form_tag history_points_path, :method => "get" do %>
+  <%= label_tag :start %>
+  <%= text_field_tag :start %>
+  <%= label_tag :end %>
+  <%= text_field_tag :end %>
+  <%= label_tag :east %>
+  <%= text_field_tag :east %>
+  <%= label_tag :west %>
+  <%= text_field_tag :west %>
+  <%= label_tag :north %>
+  <%= text_field_tag :north %>
+  <%= label_tag :south %>
+  <%= text_field_tag :south %>
+  <%= submit_tag("Search") %>
+<% end %>

@@ -8,13 +8,12 @@ class HistoryPoint < ActiveRecord::Base
     self.time = Time.parse(time_at_str)  
   end 
   
-  def find_history_points(period, region)
-    HistoryPoint.all(:conditions=> [ 
-      "time between :start and :end 
-      and latitude between :east and :west
-      and longitude between :north and :south", 
-      { :start => period[:start], :end => period[:end],
-        :east => region[:east], :west => region[:west],
-        :north => region[:north], :south => region[:south] } ])
+  #http://localhost:3000/history_points?start=2009-07-03+18:42:00&end=2011-07-03+18:42:00&east=2&west=1&north=2&south=1&commit=Search
+  def self.find_history_points(params)
+    history_points = scoped  
+    if params[:start] && params[:end] && params[:east] && params[:west] && params[:north] && params[:south]
+      history_points = history_points.all(:conditions => "time between '#{params[:start]}' and '#{params[:end]}' and latitude between #{params[:west]} and #{params[:east]} and longitude between #{params[:south]} and #{params[:north]}") 
+    end
+    history_points
   end
 end

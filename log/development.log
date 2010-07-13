@@ -544,3 +544,747 @@ SyntaxError (C:/Documents and Settings/Leopard/My Documents/Aptana Studio 3 Work
 Rendered rescues/_trace (47.0ms)
 Rendered rescues/_request_and_response (0.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-04 02:13:09) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-10 19:06:05) [GET]
+
+ActionController::RoutingError (No route matches "/orders" with {:method=>:get}):
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-10 19:06:14) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 313ms (View: 282, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index to json (for 127.0.0.1 at 2010-07-10 19:06:23) [GET]
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points.json]
+
+
+Processing HistoryPointsController#index to json (for 127.0.0.1 at 2010-07-10 19:06:36) [GET]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Completed in 62ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points.json]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-12 23:08:14) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `search' for #<Class:0x483bf7c>):
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-12 23:09:02) [GET]
+  [4;35;1mHistoryPoint Load (15.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 359ms (View: 344, DB: 15) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#edit (for 127.0.0.1 at 2010-07-12 23:09:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/edit
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/history_points/1/edit]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-12 23:59:08) [GET]
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/history_points_controller.rb:5:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (32.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-12 23:59:31) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:08:59) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;36;1mHistoryPoint Load (15.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #30 of app/views/history_points/index.html.erb:
+27: 
+28: <% form_tag do %>
+29:   <%= label_tag :start %>
+30:   <%= datetime_select :start %>
+31:   <%= label_tag :end %>
+32:   <%= datetime_select :end %>
+33:   <%= label_tag :east %>
+
+    app/views/history_points/index.html.erb:30:in `datetime_select'
+    app/views/history_points/index.html.erb:30
+    app/views/history_points/index.html.erb:28
+    app/controllers/history_points_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (157.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:12:38) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+
+ActionView::TemplateError (undefined method `day' for :start:Symbol) on line #30 of app/views/history_points/index.html.erb:
+27: 
+28: <% form_tag do %>
+29:   <%= label_tag :start %>
+30:   <%= select_datetime :start %>
+31:   <%= label_tag :end %>
+32:   <%= select_datetime :end %>
+33:   <%= label_tag :east %>
+
+    app/views/history_points/index.html.erb:30
+    app/views/history_points/index.html.erb:28
+    app/controllers/history_points_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:13:36) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+
+ActionView::TemplateError (wrong number of arguments (1 for 2)) on line #34 of app/views/history_points/index.html.erb:
+31:   <%= label_tag :end %>
+32:   <%= select_datetime Date.today, :prefix => :end %>
+33:   <%= label_tag :east %>
+34:   <%= text_field :east %>
+35:   <%= label_tag :west %>
+36:   <%= text_field :west %>
+37:   <%= label_tag :north %>
+
+    app/views/history_points/index.html.erb:34:in `text_field'
+    app/views/history_points/index.html.erb:34
+    app/views/history_points/index.html.erb:28
+    app/controllers/history_points_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:14:32) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#create (for 127.0.0.1 at 2010-07-13 00:22:45) [POST]
+  Parameters: {"east"=>"-1", "commit"=>"Search", "authenticity_token"=>"/SbutC+KjFFE1va3PYGodJwhsrpGCex1qNKBOY6grhI=", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"13", "year"=>"2010"}, "start"=>{"month"=>"1", "minute"=>"00", "hour"=>"00", "day"=>"13", "year"=>"2010"}, "south"=>"-1", "west"=>"3", "north"=>"3"}
+  [4;36;1mHistoryPoint Create (0.0ms)[0m   [0;1mINSERT INTO "history_points" ("latitude", "updated_at", "time", "longitude", "created_at") VALUES(NULL, '2010-07-12 16:22:45', NULL, NULL, '2010-07-12 16:22:45')[0m
+Redirected to http://localhost:3000/history_points/2
+Completed in 110ms (DB: 0) | 302 Found [http://localhost/history_points]
+
+
+Processing HistoryPointsController#show (for 127.0.0.1 at 2010-07-13 00:22:45) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/show
+
+ActionView::TemplateError (undefined method `getlocal' for nil:NilClass) on line #13 of app/views/history_points/show.html.erb:
+10: 
+11: <p>
+12:   <b>Time:</b>
+13:   <%=h @history_point.time_at_string %>
+14: </p>
+15: 
+16: 
+
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/show.html.erb:13
+    app/controllers/history_points_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#show (for 127.0.0.1 at 2010-07-13 00:25:07) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mHistoryPoint Load (16.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE ("history_points"."id" = 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/show
+
+ActionView::TemplateError (undefined method `getlocal' for nil:NilClass) on line #13 of app/views/history_points/show.html.erb:
+10: 
+11: <p>
+12:   <b>Time:</b>
+13:   <%=h @history_point.time_at_string %>
+14: </p>
+15: 
+16: 
+
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/show.html.erb:13
+    app/controllers/history_points_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:25:10) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+
+ActionView::TemplateError (undefined method `getlocal' for nil:NilClass) on line #14 of app/views/history_points/index.html.erb:
+11:   <tr>
+12:     <td><%=h history_point.latitude %></td>
+13:     <td><%=h history_point.longitude %></td>
+14:     <td><%=h history_point.time_at_string %></td>
+15:     <td><%= link_to 'Show', history_point %></td>
+16:     <td><%= link_to 'Edit', edit_history_point_path(history_point) %></td>
+17:     <td><%= link_to 'Destroy', history_point, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/index.html.erb:14
+    c:1:in `each'
+    c:1:in `__send__'
+    c:1:in `each'
+    app/views/history_points/index.html.erb:10
+    app/controllers/history_points_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mHistoryPoint Load (15.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" ORDER BY history_points.id DESC LIMIT 1[0m
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" ORDER BY history_points.id DESC LIMIT 1[0m
+  [4;35;1mHistoryPoint Delete all (94.0ms)[0m   [0mDELETE FROM "history_points" WHERE ("id" IN (2)) [0m
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:28:32) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+
+ActionView::TemplateError (history_point_url failed to generate from {:action=>"show", :controller=>"history_points"} - you may have ambiguous routes, or you may need to supply additional parameters for this route.  content_url has the following required parameters: ["history_points", :id] - are they all satisfied?) on line #28 of app/views/history_points/index.html.erb:
+25: 
+26: <br />
+27: 
+28: <% form_tag history_point_path, :method => "get" do %>
+29:   <%= label_tag :start %>
+30:   <%= select_datetime Date.today, :prefix => :start %>
+31:   <%= label_tag :end %>
+
+    (eval):17:in `history_point_path'
+    app/views/history_points/index.html.erb:28
+    app/controllers/history_points_controller.rb:7:in `index'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 00:29:29) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#create (for 127.0.0.1 at 2010-07-13 00:30:04) [POST]
+  Parameters: {"east"=>"", "commit"=>"Search", "authenticity_token"=>"/SbutC+KjFFE1va3PYGodJwhsrpGCex1qNKBOY6grhI=", "method"=>"get", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"13", "year"=>"2010"}, "start"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"13", "year"=>"2010"}, "south"=>"", "west"=>"", "north"=>""}
+  [4;36;1mHistoryPoint Create (0.0ms)[0m   [0;1mINSERT INTO "history_points" ("latitude", "updated_at", "time", "longitude", "created_at") VALUES(NULL, '2010-07-12 16:30:04', NULL, NULL, '2010-07-12 16:30:04')[0m
+Redirected to http://localhost:3000/history_points/3
+Completed in 109ms (DB: 0) | 302 Found [http://localhost/history_points?method=get]
+
+
+Processing HistoryPointsController#show (for 127.0.0.1 at 2010-07-13 00:30:04) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE ("history_points"."id" = 3) [0m
+Rendering template within layouts/history_points
+Rendering history_points/show
+
+ActionView::TemplateError (undefined method `getlocal' for nil:NilClass) on line #13 of app/views/history_points/show.html.erb:
+10: 
+11: <p>
+12:   <b>Time:</b>
+13:   <%=h @history_point.time_at_string %>
+14: </p>
+15: 
+16: 
+
+    app/models/history_point.rb:4:in `time_at_string'
+    app/views/history_points/show.html.erb:13
+    app/controllers/history_points_controller.rb:18:in `show'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" ORDER BY history_points.id DESC LIMIT 1[0m
+  [4;36;1mHistoryPoint Delete all (78.0ms)[0m   [0;1mDELETE FROM "history_points" WHERE ("id" IN (3)) [0m
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 01:44:05) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Completed in 344ms (View: 329, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-13 01:44:11) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"13", "year"=>"2010"}, "start"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"13", "year"=>"2010"}, "south"=>"", "west"=>"", "north"=>""}
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `where' for #<Class:0x47717b8>):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:13:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (110.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:15:49) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Completed in 390ms (View: 390, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:15:53) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "start"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "south"=>"", "west"=>"", "north"=>""}
+
+ArgumentError (Unknown key(s): east, west, start, north, south, end):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:13:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:22:28) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "start"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "south"=>"", "west"=>"", "north"=>""}
+
+SyntaxError (C:/Documents and Settings/Leopard/My Documents/Aptana Studio 3 Workspace/demo/app/models/history_point.rb:14: syntax error, unexpected tSTRING_BEG, expecting ')'
+      "time between #{params[:start]} and #{params[:end]} 
+       ^
+C:/Documents and Settings/Leopard/My Documents/Aptana Studio 3 Workspace/demo/app/models/history_point.rb:16: syntax error, unexpected ')', expecting kEND
+...outh]} and #{params[:north]}") if params[:start] && params[:...
+                              ^):
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:23:15) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "start"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "south"=>"", "west"=>"", "north"=>""}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between month7minute00hour00day14year2010 and month7minute00hour00day14year2010 and latitude between and and longitude between and ) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between month7minute00hour00day14year2010 and month7minute00hour00day14year2010 and latitude between  and  and longitude between  and ) ):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:13:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:24:52) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "start"=>{"month"=>"7", "minute"=>"00", "hour"=>"00", "day"=>"14", "year"=>"2010"}, "south"=>"", "west"=>"", "north"=>""}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between month7minute00hour00day14year2010 and month7minute00hour00day14year2010 and latitude between and and longitude between and ) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between month7minute00hour00day14year2010 and month7minute00hour00day14year2010 and latitude between  and  and longitude between  and ) ):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:13:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:25:11) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:26:33) [GET]
+Rendering template within layouts/history_points
+Rendering history_points/index
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/history_points]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:26:39) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>"2010-07-03 18:42:00", "start"=>"2010-07-03 18:42:00", "south"=>"", "west"=>"", "north"=>""}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSQLite3::SQLException: near "Jul": syntax error: SELECT * FROM "history_points" WHERE (time between Sat Jul 03 18:42:00 +0800 2010 and Sat Jul 03 18:42:00 +0800 2010 and latitude between and and longitude between and ) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "Jul": syntax error: SELECT * FROM "history_points" WHERE (time between Sat Jul 03 18:42:00 +0800 2010 and Sat Jul 03 18:42:00 +0800 2010 and latitude between  and  and longitude between  and ) ):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:13:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:27:37) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>"2010-07-03 18:42:00", "start"=>"2010-07-03 18:42:00", "south"=>"", "west"=>"", "north"=>""}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between and and longitude between and ) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between  and  and longitude between  and ) ):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:13:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:28:50) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>"2010-07-03 18:42:00", "start"=>"2010-07-03 18:42:00", "south"=>"", "west"=>"", "north"=>""}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between and and longitude between and ) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between  and  and longitude between  and ) ):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:14:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:28:55) [GET]
+  Parameters: {"east"=>"", "commit"=>"Search", "end"=>"2010-07-03 18:42:00", "start"=>"2010-07-03 18:42:00", "south"=>"", "west"=>"", "north"=>""}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between and and longitude between and ) [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: near "and": syntax error: SELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between  and  and longitude between  and ) ):
+  c:1:in `__send__'
+  c:1:in `with_scope'
+  app/models/history_point.rb:14:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (140.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:29:07) [GET]
+  Parameters: {"east"=>"1", "commit"=>"Search", "end"=>"2010-07-03 18:42:00", "start"=>"2010-07-03 18:42:00", "south"=>"2", "west"=>"2", "north"=>"1"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between 2 and 1 and longitude between 2 and 1) [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points?start=2010-07-03+18%3A42%3A00&end=2010-07-03+18%3A42%3A00&east=1&west=2&north=1&south=2&commit=Search]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:29:20) [GET]
+  Parameters: {"east"=>"2", "commit"=>"Search", "end"=>"2010-07-03 18:42:00", "start"=>"2010-07-03 18:42:00", "south"=>"1", "west"=>"1", "north"=>"2"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE (time between 'Sat Jul 03 18:42:00 +0800 2010' and 'Sat Jul 03 18:42:00 +0800 2010' and latitude between 1 and 2 and longitude between 1 and 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points?start=2010-07-03+18%3A42%3A00&end=2010-07-03+18%3A42%3A00&east=2&west=1&north=2&south=1&commit=Search]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:30:01) [GET]
+  Parameters: {"east"=>"2", "commit"=>"Search", "end"=>"2011-07-03 18:42:00", "start"=>"2009-07-03 18:42:00", "south"=>"1", "west"=>"1", "north"=>"2"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE (time between 'Fri Jul 03 18:42:00 +0800 2009' and 'Sun Jul 03 18:42:00 +0800 2011' and latitude between 1 and 2 and longitude between 1 and 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/history_points?start=2009-07-03+18%3A42%3A00&end=2011-07-03+18%3A42%3A00&east=2&west=1&north=2&south=1&commit=Search]
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" [0m
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:33:16) [GET]
+  Parameters: {"east"=>"2", "commit"=>"Search", "end"=>"2011-07-03 18:42:00", "start"=>"2009-07-03 18:42:00", "south"=>"1", "west"=>"1", "north"=>"2"}
+
+NoMethodError (undefined method `getlocal' for "2009-07-03 18:42:00":String):
+  app/models/history_point.rb:14:in `find_history_points'
+  app/controllers/history_points_controller.rb:5:in `index'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (31.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:33:45) [GET]
+  Parameters: {"east"=>"2", "commit"=>"Search", "end"=>"2011-07-03 18:42:00", "start"=>"2009-07-03 18:42:00", "south"=>"1", "west"=>"1", "north"=>"2"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE (time between '2009-07-03 18:42:00' and '2011-07-03 18:42:00' and latitude between 1 and 2 and longitude between 1 and 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points?start=2009-07-03+18%3A42%3A00&end=2011-07-03+18%3A42%3A00&east=2&west=1&north=2&south=1&commit=Search]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:33:51) [GET]
+  Parameters: {"east"=>"2", "commit"=>"Search", "end"=>"2011-07-03 18:42:00", "start"=>"2009-07-03 18:42:00", "south"=>"1", "west"=>"1", "north"=>"2"}
+  [4;35;1mHistoryPoint Load (0.0ms)[0m   [0mSELECT * FROM "history_points" WHERE (time between '2009-07-03 18:42:00' and '2011-07-03 18:42:00' and latitude between 1 and 2 and longitude between 1 and 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/history_points?start=2009-07-03+18%3A42%3A00&end=2011-07-03+18%3A42%3A00&east=2&west=1&north=2&south=1&commit=Search]
+
+
+Processing HistoryPointsController#index (for 127.0.0.1 at 2010-07-14 00:33:55) [GET]
+  Parameters: {"east"=>"2", "commit"=>"Search", "end"=>"2011-07-03 18:42:00", "start"=>"2009-07-03 18:42:00", "south"=>"1", "west"=>"1", "north"=>"2"}
+  [4;36;1mHistoryPoint Load (0.0ms)[0m   [0;1mSELECT * FROM "history_points" WHERE (time between '2009-07-03 18:42:00' and '2011-07-03 18:42:00' and latitude between 1 and 2 and longitude between 1 and 2) [0m
+Rendering template within layouts/history_points
+Rendering history_points/index
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/history_points?start=2009-07-03+18%3A42%3A00&end=2011-07-03+18%3A42%3A00&east=2&west=1&north=2&south=1&commit=Search]
