@@ -1,5 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :history_points
+  map.resources :map
 
   # The priority is based upon order of creation: first created -> highest priority.
 
